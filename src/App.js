@@ -1,13 +1,16 @@
 import "./App.css";
 import React from "react";
+import Search from "./Search";
 
 function App() {
   return (
-    <div className="App mt-5 ">
-      <h1>Dictionary</h1>
-      <div className="row">
-        <div className="col-6">Hello</div>
-        <div className="col-6">Hello</div>
+    <div className="App  ">
+      <div className="container">
+        <header className="mt-5 mb-5"> Dictionary</header>
+        <main>
+          <Search />
+        </main>
+        <footer className="text-center">Coded by Zoé Playoust</footer>
       </div>
     </div>
   );

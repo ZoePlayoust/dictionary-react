@@ -1,0 +1,12 @@
+.search-elements {
+  justify-content: center;
+}
+
+.search-bar {
+  margin-right: 5px;
+  width: 25%;
+}
+.search-button {
+  width: 10%;
+  border-radius: 5px;
+}
