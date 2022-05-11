@@ -6,6 +6,7 @@ export default function Search() {
   let [keyWord, setKeyWord] = useState("");
   function handleSubmit(event) {
     event.preventDefault();
+    //documentation https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
   }
