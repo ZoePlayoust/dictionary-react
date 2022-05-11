@@ -1,20 +1,29 @@
 import React, { useState } from "react";
 import "./Search.css";
+import axios from "axios";
 
 export default function Search() {
   let [keyWord, setKeyWord] = useState("");
   function handleSubmit(event) {
     event.preventDefault();
-    alert(keyWord);
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleResponse(response) {
+    console.log(response);
   }
   function handleKeyWordChange(event) {
     setKeyWord(event.target.value);
   }
 
   return (
-    <div className="Search  mb-3">
+    <div className="Search  mb-5">
       <form onSubmit={handleSubmit}>
-        <div className="row search-elements">
+        <div
+          className="
+         search-elements"
+        >
           {" "}
           <input
             type="search"
