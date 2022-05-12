@@ -1,7 +1,7 @@
 import React from "react";
 import "./Meanings.css";
 
-export default function (props) {
+export default function Definitions(props) {
   return (
     <div className="definitions ">
       <br />

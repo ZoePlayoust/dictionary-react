@@ -2,7 +2,8 @@ import "./App.css";
 import React from "react";
 import Search from "./Search";
 import TypeWriterEffect from "react-typewriter-effect";
-function App() {
+
+export default function App() {
   return (
     <div className="App  ">
       <div className="container">
@@ -27,5 +28,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
