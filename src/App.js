@@ -1,12 +1,24 @@
 import "./App.css";
 import React from "react";
 import Search from "./Search";
-
+import TypeWriterEffect from "react-typewriter-effect";
 function App() {
   return (
     <div className="App  ">
       <div className="container">
-        <header className="mt-5 mb-5"> Dictionary</header>
+        <header className="mt-5 mb-5">
+          <div className="row">
+            <div className="col-auto mx-auto">
+              <TypeWriterEffect
+                textStyle={{ fontFamily: "Courier Prime" }}
+                startDelay={100}
+                cursorColor="black"
+                text="Dictionary"
+                typeSpeed={100}
+              />
+            </div>
+          </div>
+        </header>
         <main>
           <Search />
         </main>
