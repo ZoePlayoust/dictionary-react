@@ -1,0 +1,12 @@
+.part-of-speech {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.definitions {
+  margin-left: 100px;
+  margin-right: 75px;
+  text-align: justify;
+  font-family: "Courier Prime";
+}
