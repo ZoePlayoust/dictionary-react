@@ -1,0 +1,36 @@
+* {
+  font-family: "Courier Prime";
+}
+
+.search-elements {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  margin-right: 5px;
+  width: 33%;
+}
+.search-button {
+  width: auto;
+  border-radius: 5px;
+}
+
+.row {
+  width: 100%;
+}
+
+.hint {
+  display: flex;
+  justify-content: center;
+  margin-left: -50px;
+}
+
+section {
+  background-color: azure;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid black;
+  box-shadow: rgb(1, 10, 43) 0px 20px 30px -10px;
+}

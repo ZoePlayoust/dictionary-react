@@ -1,14 +1,16 @@
 Header {
   font-size: 50px;
   text-align: center;
+  background-color: azure;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid black;
 }
 .container {
-  width: 75%;
-  border: 1px solid black;
-  border-radius: 5px;
+  max-width: 1350px;
+
   margin-top: 15px;
   font-family: "Courier Prime";
-  background-color: azure;
 }
 
 .App {
@@ -19,7 +21,6 @@ Header {
   position: absolute;
   min-height: 100%;
   width: 100%;
-  opacity: 0.8;
 }
 
 footer {

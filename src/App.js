@@ -1,13 +1,13 @@
 import "./App.css";
 import React from "react";
-import Search from "./Search";
+import Dictionary from "./Dictionary";
 import TypeWriterEffect from "react-typewriter-effect";
 
 export default function App() {
   return (
     <div className="App  ">
       <div className="container mt-5">
-        <header className="mt-5 mb-5">
+        <header className="mt-2 mb-2">
           <div className="row">
             <div className="col-auto mx-auto">
               <TypeWriterEffect
@@ -21,7 +21,7 @@ export default function App() {
           </div>
         </header>
         <main>
-          <Search />
+          <Dictionary keyword="Charcoal" />
         </main>
       </div>
       <footer className="text-center mt-3 mb-3">Coded by Zoé Playoust</footer>
