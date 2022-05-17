@@ -2,7 +2,7 @@ import React from "react";
 import "./Results.css";
 export default function Phonetics(props) {
   console.log(props);
-  if (props.phonetics.audio) {
+  if (props.phonetics.audio && props.phonetics.text) {
     return (
       <div className="phonetics ml-5">
         <a href={props.phonetics.audio} target="blank">
