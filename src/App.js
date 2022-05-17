@@ -6,7 +6,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 export default function App() {
   return (
     <div className="App  ">
-      <div className="container">
+      <div className="container mt-5">
         <header className="mt-5 mb-5">
           <div className="row">
             <div className="col-auto mx-auto">
