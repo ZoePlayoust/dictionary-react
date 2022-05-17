@@ -2,3 +2,17 @@
   text-transform: capitalize;
   margin-left: 35px;
 }
+
+.audio {
+  color: black;
+}
+
+.audio:hover {
+  color: gray;
+}
+
+.phonetics {
+  background-color: antiquewhite;
+  font-size: 20px;
+  width: 50%;
+}
