@@ -1,7 +1,14 @@
 * {
   font-family: "Courier Prime";
 }
-
+a {
+  text-decoration: none !important;
+  color: #23272b !important;
+  margin-left: 7px;
+}
+a:hover {
+  color: #5e90c2 !important;
+}
 .search-elements {
   display: flex;
   justify-content: center;
@@ -23,7 +30,6 @@
 .hint {
   display: flex;
   justify-content: center;
-  margin-left: -50px;
 }
 
 section {

@@ -2,16 +2,32 @@
   text-transform: capitalize;
 }
 
-.audio {
-  color: black;
+.phonetic-block {
+  display: flex;
+  flex-direction: row;
+  
 }
 
-.audio:hover {
-  color: gray;
+.pronunciation {
+  font-size: 27px;
+  padding-left: 15px;
+  padding-top: 6px;
 }
 
-.phonetics {
-  background-color: antiquewhite;
+button {
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% !important;
+  border-color: #1a5668;
+  background-color: white;
+}
+.icon {
+  padding-top: 3px;
   font-size: 20px;
-  width: 50%;
+  color: #1a5668;
+}
+
+.icon:hover {
+  color: black;
 }

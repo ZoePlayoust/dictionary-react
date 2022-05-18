@@ -54,7 +54,7 @@ export default function Dictionary(props) {
             </div>
           </form>
           <div className="mb-3 hint ">
-            Suggested words: wine, cheese, chocolate
+            Suggested words: wine, chocolate, candy
           </div>
         </section>
 
