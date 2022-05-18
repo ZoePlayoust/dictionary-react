@@ -8,3 +8,7 @@
   text-align: justify;
   font-family: "Courier Prime";
 }
+
+.example {
+  text-transform: capitalize;
+}
