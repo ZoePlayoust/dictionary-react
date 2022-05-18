@@ -26,3 +26,10 @@ Header {
 footer {
   color: azure;
 }
+
+footer a {
+  color: azure !important;
+}
+footer a:hover {
+  color: rgb(143, 230, 230) !important;
+}

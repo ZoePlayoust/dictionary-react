@@ -11,7 +11,7 @@ export default function Definitions(props) {
         return (
           <div key={index}>
             <p>
-              {index + 1}. {definition.definition}
+              {index + 1}. {definition.definition} <br />
               <em className="example">{definition.example}</em>
               <br />
             </p>

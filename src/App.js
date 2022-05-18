@@ -21,10 +21,26 @@ export default function App() {
           </div>
         </header>
         <main>
-          <Dictionary keyword="Charcoal" />
+          <Dictionary />
         </main>
       </div>
-      <footer className="text-center mt-3 mb-3">Coded by Zoé Playoust</footer>
+      <footer className="text-center mt-3 mb-3">
+        <a
+          href="https://github.com/ZoePlayoust/dictionary-react"
+          target="blank"
+          rel="noreferrer"
+        >
+          Coded
+        </a>{" "}
+        by{" "}
+        <a
+          href="https://www.linkedin.com/in/zo%C3%A9-playoust-467b68116/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Zoé Playoust
+        </a>
+      </footer>
     </div>
   );
 }

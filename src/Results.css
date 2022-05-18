@@ -5,7 +5,6 @@
 .phonetic-block {
   display: flex;
   flex-direction: row;
-  
 }
 
 .pronunciation {
@@ -14,7 +13,7 @@
   padding-top: 6px;
 }
 
-button {
+.audio-btn {
   padding: 0px;
   width: 50px;
   height: 50px;
@@ -30,4 +29,11 @@ button {
 
 .icon:hover {
   color: black;
+}
+
+.synonyms span {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin-left: 3px;
 }

@@ -18,7 +18,7 @@ export default function Phonetics(props) {
               <code>audio</code> element.
             </audio>
 
-            <button onClick={playAudio}>
+            <button className="audio-btn" onClick={playAudio}>
               <i className="fa-solid fa-play icon"></i>
             </button>
           </div>{" "}
