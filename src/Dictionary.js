@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
-
+import Photos from "./Photos";
 export default function Dictionary() {
   let [defaultValue, setDefaultvalue] = useState("coal");
   let [keyWord, setKeyWord] = useState(defaultValue);
   let [result, setResult] = useState(null);
   let [loaded, setloaded] = useState(false);
-
+  let [photos, setPhotos] = useState(null);
   function handleResponse(response) {
     setResult(response.data[0]);
   }
@@ -18,14 +18,30 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${event.target.id}`;
     console.log(keyWord);
     axios.get(apiUrl).then(handleResponse);
+    let pexelsApiKey =
+      "563492ad6f917000010000019a393949c72f44bb897f7f2eb94a0247";
+    let pexelsUrl = `https://api.pexels.com/v1/search/?per_page=9&query=${event.target.id}`;
+    axios
+      .get(pexelsUrl, { headers: { Authorization: `Bearer ${pexelsApiKey}` } })
+      .then(handlePexelsResponse);
   }
 
   function search() {
     //documentation https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
-  }
 
+    let pexelsApiKey =
+      "563492ad6f917000010000019a393949c72f44bb897f7f2eb94a0247";
+    let pexelsUrl = `https://api.pexels.com/v1/search/?per_page=9&query=${keyWord}`;
+    axios
+      .get(pexelsUrl, { headers: { Authorization: `Bearer ${pexelsApiKey}` } })
+      .then(handlePexelsResponse);
+  }
+  function handlePexelsResponse(response) {
+    console.log(response.data.photos);
+    setPhotos(response.data.photos);
+  }
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -77,6 +93,9 @@ export default function Dictionary() {
         </section>
 
         <Results results={result} />
+        <section>
+          <Photos photos={photos} />
+        </section>
       </div>
     );
   } else {
