@@ -31,8 +31,8 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-.hint button {
-  margin-right: 4px;
+.hint button:hover {
+  color: #5e90c2;
 }
 
 .hint-example {
@@ -42,7 +42,8 @@ a:hover {
 }
 
 section {
-  background-color: azure;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 8px;

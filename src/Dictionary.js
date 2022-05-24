@@ -4,7 +4,7 @@ import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
 export default function Dictionary() {
-  let [defaultValue, setDefaultvalue] = useState("coal");
+  let [defaultValue, setDefaultvalue] = useState("typewriter");
   let [keyWord, setKeyWord] = useState(defaultValue);
   let [result, setResult] = useState(null);
   let [loaded, setloaded] = useState(false);
@@ -69,7 +69,7 @@ export default function Dictionary() {
                 type="search"
                 className="search-bar mb-2 "
                 onChange={handleKeyWordChange}
-                defaultValue="Enter your word here"
+                defaultValue=" "
               ></input>
               <input
                 type="submit"
@@ -80,14 +80,14 @@ export default function Dictionary() {
           </form>
           <div className="mb-3 hint ">
             <span className="hint-example">Examples: </span>
-            <button className=" btn btn-dark" onClick={handleHint} id="wine">
+            <button className=" btn " onClick={handleHint} id="wine">
               wine{" "}
             </button>
-            <button className=" btn btn-dark" onClick={handleHint} id="beach">
+            <button className=" btn " onClick={handleHint} id="beach">
               beach{" "}
             </button>
-            <button className=" btn btn-dark" onClick={handleHint} id="sun">
-              Sun{" "}
+            <button className=" btn " onClick={handleHint} id="sun">
+              sun{" "}
             </button>
           </div>
         </section>
